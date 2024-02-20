@@ -19,8 +19,7 @@ public class TestePessoa2 {
         System.out.println("Digite o endereco: ");
         String endereco = scanner.nextLine();
         
-        System.out.println("Digite el CPF: ");
-        String cpf = scanner.nextLine();
+        
         
         
         Pessoa p = new Pessoa(nome, idade, endereco );

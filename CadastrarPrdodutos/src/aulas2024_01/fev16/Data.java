@@ -7,6 +7,7 @@ public class Data {
     private byte mes;
     private byte dia;
     
+    //--------------------------------------------------------------------
     public int getAno(){ 
     return ano;
             }
@@ -17,7 +18,7 @@ public class Data {
     } else 
             System.out.println("Ano invalido !!!!");
     }
-    
+    //--------------------------------------------------------------------
     public byte getDia(){
     return dia;
     }
@@ -28,8 +29,8 @@ public class Data {
     else
     System.out.println("Dia Invalido !!!!");
     }
-    
-    public byte gerMes(){
+    //-------------------------------------------------------------------
+    public byte getMes(){
     return mes;
     }
     
@@ -40,7 +41,7 @@ public class Data {
     else 
             System.out.println("Mes Invalido !!!!");
     }
-    
+    //---------------------------------------------------------------------
     public boolean isAnoBissexto(){
         if (((ano % 4 == 0) && (ano % 100 != 0)) || (ano % 400 == 0))
             return true;
@@ -48,5 +49,11 @@ public class Data {
             return false;
     }
     
+    
+    public Data(int a, byte m, byte d){
+     setAno(a);
+     ajustarMes(m);
+     setDia(d);
+     }
     
 }
